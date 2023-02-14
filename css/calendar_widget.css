@@ -1,0 +1,128 @@
+:root {    
+    --color_text: #DDD;
+    --color_shadow: #AAA;
+    --color_bkgd: var(--color_nightsky);
+    --color_cell: var(--color_lightblue);
+    --color_cellhover: var(--color_bkgd);
+    --color_border1: lightgray;
+    --color_borderhover: var(--color_cell);
+    
+    --color_buttonbkgd: var(--color_lightblue);
+    --color_buttonbkgd_hover: var(--color_nightsky);
+    --color_buttontxt: lightgray;
+}
+
+.calendar {
+    width: 100%;
+    padding: 5px;
+    color: var(--color_text);
+    background-color: var(--color_bkgd);
+    /*border: 1px solid gray;
+    */
+    text-align: center;
+}
+.cal_head {}
+.cal_headcell {}
+
+.cal_body {}
+.cal_week {
+    height: 56px;
+}
+
+.cal_emptyday, .cal_normalday {
+    min-width: 24px;
+    height: 24px;
+    padding: 10px 5px;
+}
+.cal_normalday {
+    background-color: var(--color_cell);
+}
+.cal_normalday:hover {
+    background-color: var(--color_cellhover);
+    border: 3px solid var(--color_borderhover);
+    padding: 7px 2px;
+    text-shadow: 0px 0px 3px var(--color_shadow);
+    cursor:pointer;
+}
+
+.cal_today {
+    border: 3px solid var(--color_nightsky);
+    padding: 7px 2px;
+    font-weight: bold;
+    background-color: var(--color_lightblue);
+}
+
+.cal_chosen {
+    border: 3px solid gray;
+    padding: 5px 2px;
+    font-weight: bold;
+    text-shadow: 0px 0px 7px var(--color_shadow);
+}
+
+/* outer widget feature */
+
+#cal_wg_table {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    background: var(--color_lightblue);
+    text-align: center;
+}
+#cal_wg_table:hover {
+    cursor: default; /* Fixes weekday tags */
+}
+.cal_wg_title {
+    padding: 5px;
+}
+.cal_wg_calendar {}
+
+.cal_wg_buttonsrow {}
+.cal_wg_buttongap {
+    min-width: 20%;
+}
+.cal_wg_button {
+    background: var(--color_buttonbkgd);
+    color: var(--color_buttontxt);
+    border-collapse: collapse;
+    padding: 10px;
+    min-width: 30px;
+    max-width: 70px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cal_wg_button:hover {
+    background: var(--color_buttonbkgd_hover);
+}
+
+.fas { /* The event indincating dot */
+    font-size: 7px;
+}
+
+/* Display control buttons */
+.cal_dispbutton{
+    width: 100%;
+    padding: 15px 0px;
+    background: var(--color_lightblue);
+    text-align: center;
+    font-size:80%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cal_dispbutton:hover {
+    background: var(--color_nightsky);
+}
+#cal_showbutton{
+    display: table;
+}
+#cal_hidebutton {
+    display: none;
+}
+ 
+@media only screen and (min-width: 840px) {
+    #cal_wg_table {
+	display: table;
+    }
+    #cal_showbutton #cal_hidebutton {
+	display: none;
+    }
+}

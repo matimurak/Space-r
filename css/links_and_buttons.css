@@ -1,0 +1,54 @@
+
+a {
+    color:gold;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: goldenrod; 
+}
+a:hover {
+    color:palegoldenrod;
+    text-decoration: underline;
+}
+
+.buttonbar {
+    margin: 8px 0;
+}
+
+.abutton {
+    float: left;
+    background-color: palegoldenrod;
+    color: #080815;
+    font-size: 100%;
+    padding: 10px 20px;
+    border: none;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+}
+.abutton:hover {
+    background-color: #080815;
+    color: palegoldenrod;
+    padding: 9px 19px;
+    border: 1px solid;
+    border-color: palegoldenrod;
+}
+
+.ctrlbtn {
+    font-size: 100%;
+    padding: 14px 20px;
+    margin: 5px 8px 5px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: palegoldenrod;
+    color: #080815;
+    cursor: pointer;
+}
+.ctrlbtn:hover {
+    background-color: #080815;
+    color: palegoldenrod;    
+}

@@ -1,0 +1,53 @@
+/*------- menubar -------*/
+
+#menubar_left {
+    float: left;
+}
+
+#menubar_right {
+    float: right;
+}
+
+#menubar {
+    background-color: palegoldenrod;
+    color: #080815;
+    overflow: hidden;
+}
+
+#menubar a, #menubar button{
+    float: left;
+    background-color: palegoldenrod;
+    color: #080815;
+    font-size: 125%;
+    padding: 14px 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+}
+
+#menubar a:hover, #menubar button:hover{
+    background-color: #080815 ;
+    color:palegoldenrod;
+}
+
+#menubar button {
+    padding: 13.5px 5px;
+}
+@media only screen and (min-width: 720px) {
+    #menubar a {
+	padding: 14px 15px;
+    }
+    #menubar button {
+	padding: 13.5px 15px;
+    }
+}
+@media only screen and (min-width: 840px) {
+    #menubar a {
+	padding: 14px 25px;
+    }
+    #menubar button {
+	padding: 13.5px 25px;
+    }
+}
+

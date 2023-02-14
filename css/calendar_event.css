@@ -1,0 +1,54 @@
+.evdetails_tile {
+    padding: 20px;
+    margin: 5px 0px;
+    background-color: var(--color_lightblue);
+}
+.evtitle {
+    overflow: hidden;
+}
+.evnametype {
+    float: left;
+}
+.evname {
+    font-weight: bold;
+    
+}
+.evtype {
+    font-size: 90%;
+}
+.evdatetime  {
+    float: right;
+    text-align: right;
+    font-style: italic;
+    background-color: var(--color_lightblue);
+    color: var(--color_lightblue_shade);
+}
+.evdate {
+    font-weight: bold;
+}
+.evtime {
+    font-size: 110%;
+}
+.evdesc {
+    padding: 8px;
+}
+
+.evemptymsg {
+    padding: 8px;
+    color: var(--color_lightblue_shade);
+    font-style: italic;
+}
+
+.ev_deletebtn {
+    padding: 8px 30px;
+    width: fit-content;
+    border: 2px solid var(--color_lightblue_shade);
+    font-size: 90%;
+    font-style: italic;
+}
+
+.ev_deletebtn:hover {
+    background-color: var(--color_nightsky);
+    border: 2px solid var(--color_nightsky);
+    
+}

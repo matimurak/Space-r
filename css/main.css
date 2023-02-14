@@ -1,0 +1,12 @@
+@import "variables.css";
+@import "title.css";
+@import "menubar.css";
+@import "body.css";
+@import "links_and_buttons.css";
+@import "calendar_widget.css";
+@import 'calendar_event.css';
+@import "form.css";
+
+html {
+    min-width: 350px;
+}
