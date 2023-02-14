@@ -18,7 +18,7 @@ $add = 'http://localhost/space-r/';
   </div>
   <div id="menubar">
     <div id="menubar_left">
-	<a class="baritem" href="<?php echo $add;?>home.php">Główna</a>
+	<a class="baritem" href="<?php echo $add;?>home/home.php">Główna</a>
 	<a class="baritem" href="<?php echo $add;?>blog/list.php">Blogi</a>
 	<a class="baritem" href="<?php echo $add;?>gallery.php">Galeria</a>
 	<a class="baritem" href="<?php echo $add;?>calendar/page.php">Kalendarz</a>

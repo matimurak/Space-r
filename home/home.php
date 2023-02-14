@@ -4,11 +4,11 @@
   <head>
     <title>Space-R - portal dla miłośników astronomii</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css">
-    <?php include "genpur/js_scripts.php"; ?>
+    <link rel="stylesheet" href="../css/main.css">
+    <?php include "../genpur/js_scripts.php"; ?>
   </head>
   <body>
-    <?php include "genpur/topbar.php"; ?>
+    <?php include "../genpur/topbar.php"; ?>
     <div id="main">
       <div class="leftcolumn">
 	<div id="calendar_js"></div>

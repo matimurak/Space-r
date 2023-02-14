@@ -1,6 +1,7 @@
 let dispDate = clearTime(new Date());
 let chosenDate = clearTime(new Date());
 let choiceMade = false;
+
 if(typeof isSidebar === 'undefined') // set to false on main calendar page
     isSidebar = true; 
 else 
@@ -9,6 +10,8 @@ else
 function calendar_printWidget() {
     document.getElementById('calendar_js').innerHTML = calendar_widget(dispDate);
     setEventIndicators(dispDate);
+    if(isSidebar) 
+	showcalbutton();
 }
 
 function calendar_widget(dispDate) {
