@@ -1,4 +1,4 @@
-# Space-r
+# Space-R
 ## Your place in the Space.
 
 ### author: Mateusz Murak
