@@ -9,8 +9,6 @@ else
 function calendar_printWidget() {
     document.getElementById('calendar_js').innerHTML = calendar_widget(dispDate);
     setEventIndicators(dispDate);
-    if(isSidebar) 
-	showcalbutton();
 }
 
 function calendar_widget(dispDate) {
@@ -140,6 +138,9 @@ function calendar(dispDate, chosenDate) {
 
 }
 
+
+//---Printers and print helpers-------------------------------------------------
+
 function printEmptyDay() {
     let output = '<td class="cal_emptyday">&nbsp</td>';
     return output;
@@ -185,6 +186,9 @@ function eventHappensOn(checkDate) {
     
 }
 
+
+//---Buttons service-----------------------------------------------------
+
 function dayOnclick(calDay) {
     if(isSidebar) {
 	window.location.href = "http://localhost/space-r/calendar/page.php";
@@ -214,18 +218,22 @@ function dayOnclick(calDay) {
 function nextMonth() {
     dispDate.setMonth(dispDate.getMonth()+1);
     calendar_printWidget();
+    if(isSidebar) showcalbutton();
 }
 function prevMonth() {
     dispDate.setMonth(dispDate.getMonth()-1);
     calendar_printWidget();
+    if(isSidebar) showcalbutton();
 }
 function nextYear() {
     dispDate.setFullYear(dispDate.getFullYear()+1);
     calendar_printWidget();
+    if(isSidebar) showcalbutton();
 }
 function prevYear() {
     dispDate.setFullYear(dispDate.getFullYear()-1);
     calendar_printWidget();
+    if(isSidebar) showcalbutton();
 }
 
 function showcalbutton() {
@@ -241,6 +249,9 @@ function hidecalbutton() {
 function formDtUpdate() {
     console.log("formDtUpdate: ", document.getElementById("form-eventdate-input").value );
 }
+
+
+//---Data fixing and other------------------------------------------------------
 
 // Date objects getDay() method behaves differently on various systems.
 // This function ensures that Monday gets the 0 index (meaning 1st weekday).
