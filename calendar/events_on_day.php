@@ -6,9 +6,6 @@ if (!isset($_SESSION))
 require_once '../genpur/config.php';
 require_once '../genpur/validation.php';
 
-if (!isset($_SESSION['moderator']) || !$_SESSION['moderator']) {
-    die();
-}
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     die();
