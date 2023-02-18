@@ -7,7 +7,6 @@ $NOEXIT_MODE = false; // Runs despites warnings (possible memory leak!!)
 require_once "../genpur/config.php";
 require_once "../genpur/validation.php";
 include "../genpur/get_userdata.php";
-include "../genpur/input.php";
 
 echo "-DB connection data: <br>"; print_r($conn); echo "<br><br>";
 
