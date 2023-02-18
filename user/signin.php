@@ -13,7 +13,6 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     <title>Rejestracja</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/form.css">
   </head>
   <body>
     <?php include "../genpur/topbar.php"; ?>
