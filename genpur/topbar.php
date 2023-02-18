@@ -1,6 +1,6 @@
 <?php 
 // This php file contains logo and top menu bar.
-// It is meant to be included into every page of app. (see: "topbar_inset.php")
+// It is meant to be included into every page of app. 
 // It's purpose is to reduce redundand code.
 
 if( ! isset($_SESSION)) {
