@@ -81,9 +81,6 @@ mysqli_close($conn);
 
 
 function exit_action() {
-    //$DEBUGGING_MODE = true; // Swich on the to see echo error messages
-    //$NOEXIT_MODE = false; // Runs despites warnings (possible memory leak!!)
-    
     if (!$GLOBALS['DEBUGGING_MODE']) {
 	header("location: signin.php?errormsg=" . $GLOBALS['errormsg']);
     } else {
