@@ -3,9 +3,7 @@
 // It is meant to be included into every page of app. 
 // It's purpose is to reduce redundand code.
 
-if( ! isset($_SESSION)) {
-    session_start(); 
-}
+if( !isset($_SESSION) ) session_start(); 
 
 $add = 'http://localhost/space-r/';
 ?>
