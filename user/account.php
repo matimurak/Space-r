@@ -19,7 +19,7 @@ $userdata = get_userdata();
 
 <html>
   <head>
-    <title>Space-R - portal dla miłośników astronomii</title>
+    <title>Ustawienia konta</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/form.css">
@@ -85,6 +85,9 @@ $userdata = get_userdata();
 	</form>
 	
       </div>
+    </div>
+    <div class="footer">
+      Mateusz Murak, 2023
     </div>
   </body>
 </html>

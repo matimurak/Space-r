@@ -48,5 +48,8 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 	
       </div>
     </div>
+    <div class="footer">
+      Mateusz Murak, 2023
+    </div>
   </body>
 </html>

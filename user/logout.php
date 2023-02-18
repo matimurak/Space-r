@@ -23,5 +23,9 @@ session_destroy();
 	  Możesz teraz <a href="../user/login.php">zalogować się</a><br>
 	  lub wrócić na <a href="../index.php">stronę główną</a>.
 	</p>
+      </div>
+    <div class="footer">
+      Mateusz Murak, 2023
+    </div>
   </body>
 </html>
