@@ -41,7 +41,7 @@ $userdata = get_userdata();
 	<div id="disp-lname" class ="dispctrl">
 	  Nazwisko: <b><?php echo $userdata['lname'];?></b>
 	</div>
-	<div id="disp-lname" class ="dispctrl">
+	<div id="disp-status" class ="dispctrl">
 	  Uprawnienia: <b><?php
 	  if($userdata['admin']) 
 	      echo '**Administrator**';

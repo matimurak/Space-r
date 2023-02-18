@@ -1,8 +1,8 @@
 <?php
 
 // the "exit_action()" parameters:
-$DEBUGGING_MODE = true; // Swich on the to see echo error messages
-$NOEXIT_MODE = true; // Runs despites warnings (possible memory leak!!)
+$DEBUGGING_MODE = false; // Swich on the to see echo error messages
+$NOEXIT_MODE = false; // Runs despites warnings (possible memory leak!!)
 
 require_once "../genpur/config.php";
 require_once "../genpur/validation.php";
@@ -31,7 +31,6 @@ if ( !empty(username_validate($username))
 	|| !empty(name_validate($lname)) 
 	) {
     echo "# Form data invalid.";
-    $errormsg = 'Błędne dane formularza.';
     exit_action();
 }
 
@@ -96,6 +95,3 @@ function exit_action() {
 	exit();
     }   
 }
-
-
-
