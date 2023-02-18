@@ -87,8 +87,7 @@ function exit_action() {
 	echo '<br>error message: ' . $GLOBALS['errormsg'];
     }
     if (!$GLOBALS['NOEXIT_MODE']) {
-	if (isset( $GLOBALS['conn'] )) 
-	    mysqli_close( $GLOBALS['conn'] ); 
+	mysqli_close( $GLOBALS['stmt'] ); 
 	exit();
     }   
 }
