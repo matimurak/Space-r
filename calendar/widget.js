@@ -181,7 +181,7 @@ function eventHappensOn(checkDate) {
 	month: checkDate.getMonth()+1,
 	year: checkDate.getFullYear()
     },function(data) {
-	if(data == 'true') {
+	if(data === 'true') {
 	    $(currentId).css("visibility", "visible");
 	}
     });

@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="evdesc">
-       ŁOOOooooopis... 
+       Opis... 
     </div>
   </div>
 </div>
